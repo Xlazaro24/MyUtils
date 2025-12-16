@@ -45,5 +45,12 @@ public class MyUtilsTest {
             assertEquals(-1, MyUtils.extreureMaxim(new int[]{-5,-3,-1,-4}));
         }
 
+        @Test
+    public void testSumarDigits() {
+    assertEquals(10, MyUtils.sumarDigits(1234));
+    assertEquals(6, MyUtils.sumarDigits(123));
+    assertEquals(0, MyUtils.sumarDigits(0));
+    assertEquals(1, MyUtils.sumarDigits(-1)); // prueba con negativo
+}
     
 }
