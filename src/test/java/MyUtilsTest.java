@@ -39,5 +39,11 @@ public class MyUtilsTest {
     assertEquals("123", MyUtils.invertirCadena("321"));
 }
     
+    @Test
+        public void testExtreureMaxim() {
+            assertEquals(9, MyUtils.extreureMaxim(new int[]{3,7,1,9}));
+            assertEquals(-1, MyUtils.extreureMaxim(new int[]{-5,-3,-1,-4}));
+        }
+
     
 }

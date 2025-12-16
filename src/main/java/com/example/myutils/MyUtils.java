@@ -30,5 +30,16 @@ public class MyUtils {
     public static String invertirCadena(String cadena) {
         return new StringBuilder(cadena).reverse().toString();
     }
+    
+    public static int extreureMaxim(int[] array) {
+        int max = array[0];
+        for (int n : array) {
+            if (n > max) {
+                max = n;
+            }
+        }
+        return max;
+    }
+
 }
 
