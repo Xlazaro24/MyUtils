@@ -26,5 +26,9 @@ public class MyUtils {
         return res;
         // Recursivament és més elegant pero així és millor. Comentari afegit per fer justificar un commit
     }
+    
+    public static String invertirCadena(String cadena) {
+        return new StringBuilder(cadena).reverse().toString();
+    }
 }
 

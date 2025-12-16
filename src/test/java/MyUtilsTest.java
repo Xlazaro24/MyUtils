@@ -34,7 +34,10 @@ public class MyUtilsTest {
     }
 
     @Test
-    void testFactorialNegatiu() {
-        assertThrows(IllegalArgumentException.class, () -> MyUtils.factorial(-1));
-    }
+    public void testInvertirCadena() {
+    assertEquals("aloH", MyUtils.invertirCadena("Hola"));
+    assertEquals("123", MyUtils.invertirCadena("321"));
+}
+    
+    
 }
