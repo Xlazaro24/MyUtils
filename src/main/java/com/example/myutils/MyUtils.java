@@ -50,7 +50,14 @@ public class MyUtils {
     }
     return suma;
 }
-
+    
+public static int properPrimer(int numero) {
+    int n = numero + 1;
+    while (!esPrimer(n)) {
+        n++;
+    }
+    return n;
+}
 
 }
 

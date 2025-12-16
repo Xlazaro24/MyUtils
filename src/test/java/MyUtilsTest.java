@@ -53,4 +53,13 @@ public class MyUtilsTest {
     assertEquals(1, MyUtils.sumarDigits(-1)); // prueba con negativo
 }
     
+    @Test
+public void testProperPrimer() {
+    assertEquals(23, MyUtils.properPrimer(20));
+    assertEquals(3, MyUtils.properPrimer(2));
+    assertEquals(2, MyUtils.properPrimer(1));
+    assertEquals(101, MyUtils.properPrimer(100));
+}
+
+    
 }
