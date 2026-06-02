@@ -54,7 +54,7 @@ public class MyUtils {
         }
         return suma;
     }
-    
+    //Comentari per simular push a git
     public static int properPrimer(int numero) {
         int n = numero + 1;
         while (!esPrimer(n)) {
