@@ -1,0 +1,66 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ */
+
+package com.example.myutils;
+
+public class MyUtils {
+
+    public static boolean esTraspas(int any) {
+        return (any % 4 == 0 && any % 100 != 0) || (any % 400 == 0);
+        // Comentari, esteu a 2n curs, si escriviu un if aquí plantejeu passar-vos a cures auxiliars d'infermeria..
+    }
+
+    public static boolean esPrimer(int n) {
+        if (n <= 1) return false;
+        for (int i = 2; i <= Math.sqrt(n); i++) {
+            if (n % i == 0) return false;
+        }
+        return true;
+    }
+
+    public static long factorial(int n) {
+        if (n < 0) throw new IllegalArgumentException("n ha de ser >= 0");
+        long res = 1;
+        for (int i = 2; i <= n; i++) res *= i;
+        return res;
+        // Recursivament és més elegant pero així és millor. Comentari afegit per fer justificar un commit
+    }
+    
+    public static String invertirCadena(String cadena) {
+        if (cadena == null) return null; // Control de seguretat per evitar NullPointerException
+        return new StringBuilder(cadena).reverse().toString();
+    }
+    
+    public static int extreureMaxim(int[] array) {
+        if (array == null || array.length == 0) {
+            throw new IllegalArgumentException("L'array no pot estar buit ni ser nul"); // Protecció contra arrays buits
+        }
+        int max = array[0];
+        for (int n : array) {
+            if (n > max) {
+                max = n;
+            }
+        }
+        return max;
+    }
+    
+    public static int sumarDigits(int numero) {
+        int suma = 0;
+        numero = Math.abs(numero); // por si es negativo
+        while (numero > 0) {
+            suma += numero % 10;
+            numero /= 10;
+        }
+        return suma;
+    }
+    
+    public static int properPrimer(int numero) {
+        int n = numero + 1;
+        while (!esPrimer(n)) {
+            n++;
+        }
+        return n;
+    }
+
+}
