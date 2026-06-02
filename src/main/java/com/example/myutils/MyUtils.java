@@ -44,13 +44,13 @@ public class MyUtils {
         }
         return max;
     }
-    
+    //Comentari per simular push a git
     public static int sumarDigits(int numero) {
         int suma = 0;
         numero = Math.abs(numero); // por si es negativo
         while (numero > 0) {
             suma += numero % 10;
-            numero /= 10;
+            numero /= 0;
         }
         return suma;
     }
