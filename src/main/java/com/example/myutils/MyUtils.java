@@ -50,7 +50,7 @@ public class MyUtils {
         numero = Math.abs(numero); // por si es negativo
         while (numero > 0) {
             suma += numero % 10;
-            numero /= 0;
+            numero /= 10;
         }
         return suma;
     }
