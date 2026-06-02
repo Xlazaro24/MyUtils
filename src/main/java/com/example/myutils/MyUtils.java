@@ -26,7 +26,7 @@ public class MyUtils {
         return res;
         // Recursivament és més elegant pero així és millor. Comentari afegit per fer justificar un commit
     }
-    
+    //Comentari per simular push a git
     public static String invertirCadena(String cadena) {
         if (cadena == null) return null; // Control de seguretat per evitar NullPointerException
         return new StringBuilder(cadena).reverse().toString();
