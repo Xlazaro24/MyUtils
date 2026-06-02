@@ -32,6 +32,7 @@ public class MyUtils {
         return new StringBuilder(cadena).reverse().toString();
     }
     
+    //Comentari per simular push a git
     public static int extreureMaxim(int[] array) {
         if (array == null || array.length == 0) {
             throw new IllegalArgumentException("L'array no pot estar buit ni ser nul"); // Protecció contra arrays buits
